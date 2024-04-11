@@ -7,7 +7,6 @@
   <!-- Bootstrap CSS -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    /* Adjust styles as needed */
     .navbar-brand {
       font-size: 1.5rem;
     }
@@ -15,14 +14,47 @@
 		margin-left: 5%;
 		margin-right: 5%;
 	}
+	ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #B599CE;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 30px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #B599CE;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+h3 {
+	text-align: center;
+	}
   </style>
 
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #B599CE;">
+<nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #B599CE;">
   <div class="container">
-    <a class="navbar-brand" href="#">Your Logo</a>
+    <a class="navbar-brand" href="#">Trevor Hudson</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -45,7 +77,6 @@
   </div>
 </nav>
 <section id="content">
-<!-- Bootstrap JS and jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -59,8 +90,42 @@
 <h3 id="Portfolio">Portfolio</h3>
 
 <h3 id="Resume">Resume</h3>
-  <button type="button" class="btn btn-dark" style="background-color: #B599CE;" onclick="window.open('Trevor-Hudson-Resume.pdf', '_blank')">Resume</button>
+  <div class="container mt-5 mb-5">
+	<div class="row">
+		<div class="col-md-8 offset-md-2">
+			<h4>Education</h4>
+			<ul class="timeline">
+				<li>
+					<div style="display: flex; justify-content: space-between;">
+						<h6>Battlefield High School</h6>
+						<h6>August 2016 - June 2020</h6>
+					</div>
+					<p>Advanced Diploma<br>Silver CASIIT Award<br>GPA: 3.47</p>
+				</li>
+				<li>
+					<div style="display: flex; justify-content: space-between;">
+						<h6>James Madison University</h6>
+						<h6>August 2020 - May 2024</h6>
+					</div>
+					<p>Major: Computer Information Systems BBA<br>Concentration: Information Systems<br>Major GPA: 3.83</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
 
+<h4>Skills</h4>
+	<ul>
+		<li>Python</li>
+		<li>Java</li>
+		<li>C#</li>
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>JavaScript</li>
+		
+
+
+<button type="button" class="btn btn-dark" onclick="window.open('Trevor-Hudson-Resume.pdf', '_blank')">Resume PDF</button>
 </section>
   
 </body>
