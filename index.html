@@ -71,6 +71,10 @@ footer {
 #copyright {
     float: right;
 }
+#email {
+    text-align: center;
+    background-color: #CEB599;
+}
 
 
   </style>
@@ -159,7 +163,7 @@ footer {
 <br>
 <button type="button" class="btn btn-dark" onclick="window.open('Trevor-Hudson-Resume.pdf', '_blank')">Resume PDF</button>
 <h3>Contact</h3>
-	<form action="https://formspree.io/f/xkndppgo" method="POST">
+	<form id="email" action="https://formspree.io/f/xkndppgo" method="POST">
 	        <label for="email">Email:</label><br>
 	        <input type="email" id="email" name="_replyto" required><br>
 	        <label for="subject">Subject:</label><br>
