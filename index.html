@@ -79,7 +79,7 @@ footer {
 }
 	  
 #emailform textarea {
-    width: 60%; 
+    width: 40%; 
     padding: 10px; 
     box-sizing: border-box; 
     margin-bottom: 20px; 
@@ -178,11 +178,9 @@ footer {
 </section>
 	<form id="emailform" action="https://formspree.io/f/xkndppgo" method="POST">
 	        <label for="email">Email:</label><br>
-	        <input type="email" id="email" name="_replyto" required><br>
-	        <label for="subject">Subject:</label><br>
-	        <input type="text" id="subject" name="subject" required><br>
-	        <label for="message">Message:</label><br>
-	        <textarea id="message" name="message" rows="4" required></textarea><br>
+	        <input type="email" id="email" placeholder="Email" name="_replyto" required><br>
+	        <input type="text" id="subject" placeholder="Subject name="subject" required><br>
+	        <textarea id="message" name="message" placeholder="Type message here..." rows="4" required></textarea><br>
 	        <input type="submit" class="btn btn-dark" value="Send">
 	</form>
 <footer>
