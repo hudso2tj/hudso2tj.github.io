@@ -118,17 +118,16 @@ footer {
     width: auto;
     margin-right: 20px;
 }
-
-.school-details {
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline; 
+@media (max-width: 768px) {
+    .school-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .school-details h6 {
+        margin-bottom: 5px;
+    }
 }
 
-.school-details h6 {
-    margin: 0; 
-}
 
 #content ul.timeline:before {
     display: none; 
@@ -191,10 +190,8 @@ footer {
 			        <div class="school-details">
 			            <div>
 			                <h6>James Madison University</h6>
-			                <p>Major: Computer Information Systems BBA<br>Concentration: Information Systems<br>Major GPA: 3.83</p>
-			            </div>
-			            <div>
 			                <h6>August 2020 - May 2024</h6>
+			                <p>Major: Computer Information Systems BBA<br>Concentration: Information Systems<br>Major GPA: 3.83</p>
 			            </div>
 			        </div>
 			    </li>
@@ -203,10 +200,8 @@ footer {
 			        <div class="school-details">
 			            <div>
 			                <h6>Battlefield High School</h6>
-			                <p>Advanced Diploma<br>Silver CASIIT Award<br>GPA: 3.47</p>
-			            </div>
-			            <div>
 			                <h6>August 2016 - June 2020</h6>
+			                <p>Advanced Diploma<br>Silver CASIIT Award<br>GPA: 3.47</p>
 			            </div>
 			        </div>
 			    </li>
