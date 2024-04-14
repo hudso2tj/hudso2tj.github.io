@@ -42,19 +42,26 @@
             margin: 20px 0; /* Updated margin */
         }
         
-        .skills img {
-            height: 80px; /* Adjust image height */
-            width: auto;
-            margin: 10px; /* Spacing around images */
+        .skill-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px; /* Spacing around each skill item */
         }
         
-        .skills p {
+        .skill-item img {
+            height: 60px; /* Adjust image height */
+            width: auto;
+            margin-bottom: 10px; /* Spacing between image and text */
+        }
+        
+        .skill-item p {
             text-align: center;
             margin: 0; /* Remove default margin */
             font-size: 12px; /* Adjust font size */
             width: 100%; /* Take up full width */
         }
-
+        
         footer {
             background-color: #B599CE;
             bottom: 0;
