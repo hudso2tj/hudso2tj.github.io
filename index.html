@@ -38,20 +38,25 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-wrap: wrap; /* Allows skills to wrap onto the next line */
-            margin: 20px 0; /* Updated margin */
+            flex-wrap: wrap; 
+            margin: 20px 0;
         }
         
         .skills img {
-            height: 60px; /* Adjust image height */
+            height: 80px; 
             width: auto;
-            margin: 10px; /* Spacing around images */
+            margin: 10px; 
         }
         
         .skills p {
             text-align: center;
-            margin: 0; /* Remove default margin */
-            font-size: 12px; /* Adjust font size */
+            margin: 0; 
+            font-size: 12px; 
+        }
+
+        .skills img,
+        .skills p {
+            flex: 0 0 100%; 
         }
 
         footer {
@@ -240,10 +245,17 @@
             <div class="skills">
                 <!-- Tools images -->
                 <img alt="GitHub" src="Images/githublogo.png">
+                <p>GitHub</p>
                 <img alt="Microsoft Office" src="Images/msoffic-logo.png">
+                <p>Microsoft Office</p>
                 <img alt="Amazon Web Services" src="Images/aws-logo.png">
+                <p>Amazon Web Services</p>
                 <img alt="Azure" src="Images/azure-logo.png">
+                <p>Azure</p>
                 <img alt="Trello" src="Images/Trello-logo.png">
+                <p>Trello</p>
+                <img alt="VS Code" src="Images/vscode.png">
+                <p>Visual Studio Code</p>
             </div>
             <br>
             <center>
