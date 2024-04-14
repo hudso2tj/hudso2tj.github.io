@@ -92,27 +92,38 @@
 
 <body>
     <!-- Navigation -->
-    <nav style="background-color: #B599CE;">
-        <div style="padding: 10px 0; margin-left: 10%; margin-right: 10%;">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #B599CE;">
+        <div class="container">
             <a class="navbar-brand" href="#">Portfolio | TH</a>
-            <button onclick="toggleNav()" style="background-color: #B599CE; border: none; cursor: pointer;">
+            <button class="navbar-toggler" type="button" onclick="toggleNav()">
                 Menu
             </button>
-            <div id="navbarNav" style="display: none;">
-                <ul style="list-style: none;">
-                    <li style="display: inline-block; margin-right: 15px;">
-                        <a href="#Home" style="text-decoration: none;">Home</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Home">Home</a>
                     </li>
-                    <li style="display: inline-block; margin-right: 15px;">
-                        <a href="#Projects" style="text-decoration: none;">Projects</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Projects">Projects</a>
                     </li>
-                    <li style="display: inline-block; margin-right: 15px;">
-                        <a href="#Contact" style="text-decoration: none;">Contact</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <script>
+        function toggleNav() {
+            var nav = document.getElementById("navbarNav");
+            if (nav.style.display === "none" || nav.style.display === "") {
+                nav.style.display = "block";
+            } else {
+                nav.style.display = "none";
+            }
+        }
+    </script>
 
     <div id="content">
 
