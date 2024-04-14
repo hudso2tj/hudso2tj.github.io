@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | TH</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
     <style>
         /* CSS Styles */
         .navbar-brand {
@@ -20,7 +18,7 @@
         }
 
         h3 {
-            text-align: center
+            text-align: center;
         }
 
         h5 {
@@ -28,45 +26,39 @@
             padding: 25px;
         }
 
-        .linkedin,
-        .github {
-            height: 40px;
-            width: auto;
-        }
-
         .skills {
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-wrap: wrap; /* Allows skills to wrap onto the next line */
-            margin: 20px 0; /* Updated margin */
+            flex-wrap: wrap;
+            margin: 20px 0;
         }
-        
+
         .skill-item {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 10px; /* Spacing around each skill item */
-        }
-        
-        .skill-item img {
-            max-height: 50px; /* Set maximum height */
-            width: auto;
-            margin-bottom: 10px; /* Spacing between image and text */
-        }
-        
-        .skill-item p {
+            margin: 10px;
             text-align: center;
-            margin: 0; /* Remove default margin */
-            font-size: 12px; /* Adjust font size */
-            width: 100%; /* Take up full width */
         }
-        
+
+        .skill-item img {
+            height: 50px;
+            width: auto;
+            margin-bottom: 10px;
+        }
+
+        .skill-item p {
+            font-size: 12px;
+            margin: 0;
+        }
+
         footer {
             background-color: #B599CE;
             bottom: 0;
             width: 100%;
             font-style: italic;
+            text-align: center;
         }
 
         #emailform {
@@ -88,76 +80,27 @@
             float: right;
         }
 
-        .school-logo {
-            height: 100px;
-            width: auto;
-            margin-right: 20px;
-            float: left;
-        }
-
-        .school-details {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        .school-details h6 {
-            margin-bottom: 5px;
-        }
-
-        .bio {
-            width: 50%;
-            text-align: center;
-            margin: 0 auto;
-        }
-
-        #headshot {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-            border-radius: 50px;
-            padding: 20px;
-        }
-
-        .resume-section {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 30px;
-        }
-
-        .college {
-            flex: 1;
-            padding: 10px;
-            left: 200px;
-        }
-
-        .high-school {
-            flex: 1;
-            padding: 10px;
-        }
-
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #B599CE;">
-        <div class="container">
+    <!-- Navigation -->
+    <nav style="background-color: #B599CE;">
+        <div style="padding: 10px 0; margin-left: 10%; margin-right: 10%;">
             <a class="navbar-brand" href="#">Portfolio | TH</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button onclick="toggleNav()" style="background-color: #B599CE; border: none; cursor: pointer;">
+                Menu
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Home">Home</a>
+            <div id="navbarNav" style="display: none;">
+                <ul style="list-style: none;">
+                    <li style="display: inline-block; margin-right: 15px;">
+                        <a href="#Home" style="text-decoration: none;">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Projects">Projects</a>
+                    <li style="display: inline-block; margin-right: 15px;">
+                        <a href="#Projects" style="text-decoration: none;">Projects</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Contact">Contact</a>
+                    <li style="display: inline-block; margin-right: 15px;">
+                        <a href="#Contact" style="text-decoration: none;">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -179,51 +122,78 @@
         </section>
 
         <section id="Resume">
-        <h5>Education</h5>
-        
+            <h5>Education</h5>
 
             <h5>Skills</h5>
             <hr />
             <div class="skills">
                 <!-- Skills images -->
-                <img class="skill-item" alt="Python" src="Images/python-logo.png">
-                <p>Python</p>
-                <img class="skill-item" alt="Java" src="Images/Java-Logo.png">
-                <p>Java</p>
-                <img class="skill-item" alt="C#" src="Images/Logo_C_sharp.svg.png">
-                <p>C#</p>
-                <img class="skill-item" alt="HTML" src="Images/free-html-5-1-1175208.png">
-                <p>HTML</p>
-                <img class="skill-item" alt="CSS" src="Images/6ejuoo.png">
-                <p>CSS</p>
-                <img class="skill-item" alt="Bootstrap" src="Images/bootstrap-logo.png">
-                <p>Bootstrap</p>
-                <img class="skill-item" alt="JavaScript" src="Images/js-logo.jpg">
-                <p>JavaScript</p>
-                <img class="skill-item" alt="MySQL" src="Images/sql-logo.png">
-                <p>MySQL</p>
+                <div class="skill-item">
+                    <img alt="Python" src="Images/python-logo.png">
+                    <p>Python</p>
+                </div>
+                <div class="skill-item">
+                    <img alt="Java" src="Images/Java-Logo.png">
+                    <p>Java</p>
+                </div>
+                <div class="skill-item">
+                    <img alt="C#" src="Images/Logo_C_sharp.svg.png">
+                    <p>C#</p>
+                </div>
+                <div class="skill-item">
+                    <img alt="HTML" src="Images/free-html-5-1-1175208.png">
+                    <p>HTML</p>
+                </div>
+                <div class="skill-item">
+                    <img alt="CSS" src="Images/6ejuoo.png">
+                    <p>CSS</p>
+                </div>
+                <div class="skill-item">
+                    <img alt="Bootstrap" src="Images/bootstrap-logo.png">
+                    <p>Bootstrap</p>
+                </div>
+                <div class="skill-item">
+                    <img alt="JavaScript" src="Images/js-logo.jpg">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-item">
+                    <img alt="MySQL" src="Images/sql-logo.png">
+                    <p>MySQL</p>
+                </div>
             </div>
 
             <h5>Tools</h5>
             <hr />
             <div class="skills">
                 <!-- Tools images -->
-                <img class="skill-item" alt="GitHub" src="Images/githublogo.png">
-                <p>GitHub</p>
-                <img class="skill-item" alt="Microsoft Office" src="Images/msoffic-logo.png">
-                <p>Microsoft Office</p>
-                <img class="skill-item" alt="Amazon Web Services" src="Images/aws-logo.png">
-                <p>Amazon Web Services</p>
-                <img class="skill-item" alt="Azure" src="Images/azure-logo.png">
-                <p>Azure</p>
-                <img class="skill-item" alt="Trello" src="Images/Trello-logo.png">
-                <p>Trello</p>
-                <img class="skill-item" alt="VS Code" src="Images/vscode.png">
-                <p>Visual Studio Code</p>
+                <div class="skill-item">
+                    <img alt="GitHub" src="Images/githublogo.png">
+                    <p>GitHub</p>
+                </div>
+                <div class="skill-item">
+                    <img alt="Microsoft Office" src="Images/msoffic-logo.png">
+                    <p>Microsoft Office</p>
+                </div>
+                <div class="skill-item">
+                    <img alt="Amazon Web Services" src="Images/aws-logo.png">
+                    <p>Amazon Web Services</p>
+                </div>
+                <div class="skill-item">
+                    <img alt="Azure" src="Images/azure-logo.png">
+                    <p>Azure</p>
+                </div>
+                <div class="skill-item">
+                    <img alt="Trello" src="Images/Trello-logo.png">
+                    <p>Trello</p>
+                </div>
+                <div class="skill-item">
+                    <img alt="VS Code" src="Images/vscode.png">
+                    <p>Visual Studio Code</p>
+                </div>
             </div>
             <br>
             <center>
-                <p>If you'd like to get to view my resume in full detail click the button below.</p>
+                <p>If you'd like to view my resume in full detail click the button below.</p>
                 <button type="button" class="btn btn-dark" onclick="window.open('Trevor-Hudson-Resume.pdf', '_blank')">Resume PDF</button>
             </center>
         </section>
@@ -247,10 +217,8 @@
         </form>
 
         <footer>
-            <center>
-                <a href="https://www.linkedin.com/in/trevor-h-9364a4202/" target="_blank"><img class="linkedin" src="Images/linkedinlogo.webp" alt="LinkedIn Logo"></a>
-                <a href="https://github.com/hudso2tj?tab=repositories" target="_blank"><img class="github" src="Images/githublogo.png" alt="GitHub Logo"></a>
-            </center>
+            <a href="https://www.linkedin.com/in/trevor-h-9364a4202/" target="_blank"><img class="linkedin" src="Images/linkedinlogo.webp" alt="LinkedIn Logo"></a>
+            <a href="https://github.com/hudso2tj?tab=repositories" target="_blank"><img class="github" src="Images/githublogo.png" alt="GitHub Logo"></a>
             <div class="modify-date">
                 <script type="text/javascript">
                     var date = document.lastModified;
@@ -259,10 +227,6 @@
             </div>
         </footer>
     </section>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 
