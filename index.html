@@ -125,7 +125,14 @@
         }
 
         .school-container {
+            display: flex;
+            align-items: center;
             margin: 30px 75px; /* Adjusted margins */
+        }
+
+        .school-details {
+            flex: 1;
+            padding-left: 20px; /* Spacing between seal and details */
         }
 
     </style>
@@ -170,29 +177,29 @@
         </section>
 
         <section id="Resume">
-            <h5>Education</h5>
+        <h5>Education</h5>
 
-            <div class="edu-container">
-
-                <div class="school-container">
-                    <img class="school-logo" src="Images/jmu-seal.svg">
-                    <div class="school-details">
-                        <h6>James Madison University</h6>
-                        <h6>August 2020 - May 2024</h6>
-                        <p>Computer Information Systems BBA<br>Concentration: Information Systems<br>Major GPA: 3.83</p>
-                    </div>
+        <div class="edu-container">
+            <!-- James Madison University -->
+            <div class="school-container">
+                <img class="school-logo" src="Images/jmu-seal.svg">
+                <div class="school-details">
+                    <h6>James Madison University</h6>
+                    <h6>August 2020 - May 2024</h6>
+                    <p>Computer Information Systems BBA<br>Concentration: Information Systems<br>Major GPA: 3.83</p>
                 </div>
-
-                <div class="school-container">
-                    <img class="school-logo" src="Images/bhs-logo.webp">
-                    <div class="school-details">
-                        <h6>Battlefield High School</h6>
-                        <h6>August 2016 - June 2020</h6>
-                        <p>Advanced Diploma<br>Silver CASIIT Award<br>GPA: 3.47</p>
-                    </div>
-                </div>
-
             </div>
+
+            <!-- Battlefield High School -->
+            <div class="school-container">
+                <img class="school-logo" src="Images/bhs-logo.webp">
+                <div class="school-details">
+                    <h6>Battlefield High School</h6>
+                    <h6>August 2016 - June 2020</h6>
+                    <p>Advanced Diploma<br>Silver CASIIT Award<br>GPA: 3.47</p>
+                </div>
+            </div>
+        </div>
 
             <h5>Skills</h5>
             <hr />
