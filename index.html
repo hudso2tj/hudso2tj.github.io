@@ -35,11 +35,23 @@
         }
 
         .skills {
-            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* Allows skills to wrap onto the next line */
+            margin: 20px 0; /* Updated margin */
+        }
+        
+        .skills img {
+            height: 60px; /* Adjust image height */
             width: auto;
-            margin: 0 25px;
-            display: inline-block;
-            padding: 10px;
+            margin: 10px; /* Spacing around images */
+        }
+        
+        .skills p {
+            text-align: center;
+            margin: 0; /* Remove default margin */
+            font-size: 12px; /* Adjust font size */
         }
 
         footer {
@@ -204,7 +216,6 @@
             <h5>Skills</h5>
             <hr />
             <div class="skills">
-            <center>
                 <!-- Skills images -->
                 <img alt="Python" src="Images/python-logo.png">
                 <p>Python</p>
@@ -222,20 +233,17 @@
                 <p>JavaScript</p>
                 <img alt="MySQL" src="Images/sql-logo.png">
                 <p>MySQL</p>
-            </center>
             </div>
 
             <h5>Tools</h5>
             <hr />
             <div class="skills">
-            <center>
                 <!-- Tools images -->
                 <img alt="GitHub" src="Images/githublogo.png">
                 <img alt="Microsoft Office" src="Images/msoffic-logo.png">
                 <img alt="Amazon Web Services" src="Images/aws-logo.png">
                 <img alt="Azure" src="Images/azure-logo.png">
                 <img alt="Trello" src="Images/Trello-logo.png">
-            </center>
             </div>
             <br>
             <center>
