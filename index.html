@@ -48,12 +48,16 @@
             height: 80px;
             width: auto;
             margin-bottom: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .skill-item img:hover {
+            transform: scale(1.2);
         }
 
         .skill-item p {
             font-size: 12px;
             margin: 0;
-            font-weight: bold;
         }
 
         footer {
@@ -73,8 +77,9 @@
         #emailform input[type="text"],
         #emailform textarea,
         #submit {
+            padding: 5px;
             box-sizing: border-box;
-            margin: 10px 0;
+            margin: 20px 0;
         }
 
         .modify-date {
@@ -85,14 +90,13 @@
         #headshot {
             height: 300px;
             width: auto;
-            border-radius: 25%;
+            border-radius: 25px;
             padding: 25px;
         }
 
         .bio p {
+            width: 50%;
             text-align: center;
-            margin-left: 25%;
-            margin-right: 25%;
         }
 
         .linkedin,
@@ -108,11 +112,6 @@
         .education img {
             height: 80px;
             width: auto;
-        }
-
-        #Home {
-            text-align: center;
-            align-content: center;
         }
 
     </style>
@@ -277,7 +276,6 @@
         <footer>
             <a href="https://www.linkedin.com/in/trevor-h-9364a4202/" target="_blank"><img class="linkedin" src="Images/linkedinlogo.webp" alt="LinkedIn Logo"></a>
             <a href="https://github.com/hudso2tj?tab=repositories" target="_blank"><img class="github" src="Images/githublogo.png" alt="GitHub Logo"></a>
-            <br>
             <div class="modify-date">
                 <script type="text/javascript">
                     var date = document.lastModified;
