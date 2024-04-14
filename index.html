@@ -8,137 +8,137 @@
 	
   <!-- CSS Styles -->
   <style>
-.navbar-brand {
-    font-size: 1.5rem;
-}
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
 
-#content {
-    margin-left: 10%;
-    margin-right: 10%;
-    min-height: 100vh;
-}
+    #content {
+        margin-left: 10%;
+        margin-right: 10%;
+        min-height: 100vh;
+    }
 
-ul.timeline {
-    list-style-type: none;
-    position: relative;
-}
+    ul.timeline {
+        list-style-type: none;
+        position: relative;
+    }
 
-ul.timeline:before {
-    content: ' ';
-    background: #B599CE;
-    display: inline-block;
-    position: absolute;
-    left: 29px;
-    width: 2px;
-    height: 100%;
-    z-index: 400;
-}
+    ul.timeline:before {
+        content: ' ';
+        background: #B599CE;
+        display: inline-block;
+        position: absolute;
+        left: 29px;
+        width: 2px;
+        height: 100%;
+        z-index: 400;
+    }
 
-ul.timeline > li {
-    margin: 30px 0;
-    padding-left: 20px;
-    display: flex;
-    align-items: center;
-}
+    ul.timeline > li {
+        margin: 30px 0;
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+    }
 
-ul.timeline > li > img {
-    height: 100px;
-    width: auto;
-    margin-right: 20px;
-}
+    ul.timeline > li > img {
+        height: 100px;
+        width: auto;
+        margin-right: 20px;
+    }
 
-.school-details {
-    flex: 1;
-}
-
-h3 {
-    text-align: left;
-}
-
-.linkedin {
-    height: auto;
-    width: 50px;
-}
-
-.github {
-    height: auto;
-    width: 35px;
-}
-
-.skills {
-    height: 100px;
-    width: auto;
-    margin-left: 25px;
-    margin-right: 25px;
-    display: inline-block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-footer {
-    background-color: #B599CE;
-    bottom: 0;
-    width: 100%;
-    font-style: italic;
-}
-
-#emailform {
-    text-align: center;
-    background-color: #CEB599;
-}
-
-#emailform input[type="email"],
-#emailform input[type="text"],
-#emailform textarea { 
-    padding: 5px; 
-    box-sizing: border-box; 
-    margin-bottom: 20px; 
-    margin-top: 20px;
-}
-
-#submit {
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-#headshot {
-    height: 300px;
-    width: auto;
-    border-radius: 50px;
-    padding: 20px;
-    float: left;
-}
-
-.modify-date {
-    font-size: 0.75em;
-    float: right;
-}
-
-.school-logo {
-    height: 100px;
-    width: auto;
-    margin-right: 20px;
-}
-@media (max-width: 768px) {
     .school-details {
-        flex-direction: column;
-        align-items: flex-start;
+        flex: 1;
     }
-    .school-details h6 {
-        margin-bottom: 5px;
+
+    h3 {
+        text-align: left;
     }
-}
 
-#content ul.timeline:before {
-    display: none; 
-}
+    .linkedin {
+        height: auto;
+        width: 50px;
+    }
 
-.bio {
-    float: right;
-    width: 50%;
-}
+    .github {
+        height: auto;
+        width: 35px;
+    }
+
+    .skills {
+        height: 100px;
+        width: auto;
+        margin-left: 25px;
+        margin-right: 25px;
+        display: inline-block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    footer {
+        background-color: #B599CE;
+        bottom: 0;
+        width: 100%;
+        font-style: italic;
+    }
+
+    #emailform {
+        text-align: center;
+        background-color: #CEB599;
+    }
+
+    #emailform input[type="email"],
+    #emailform input[type="text"],
+    #emailform textarea { 
+        padding: 5px; 
+        box-sizing: border-box; 
+        margin-bottom: 20px; 
+        margin-top: 20px;
+    }
+
+    #submit {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    #headshot {
+        height: 300px;
+        width: auto;
+        border-radius: 50px;
+        padding: 20px;
+        float: left;
+    }
+
+    .modify-date {
+        font-size: 0.75em;
+        float: right;
+    }
+
+    .school-logo {
+        height: 100px;
+        width: auto;
+        margin-right: 20px;
+    }
+
+    @media (max-width: 768px) {
+        .school-details {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .school-details h6 {
+            margin-bottom: 5px;
+        }
+    }
+
+    #content ul.timeline:before {
+        display: none; 
+    }
+
+    .bio {
+        float: right;
+        width: 50%;
+    }
   </style>
-
 </head>
 <body>
 
@@ -166,22 +166,23 @@ footer {
     </div>
   </div>
 </nav>
+
 <section id="content">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<span id="Home">
-<h3>Home</h3>
-<center>
-    <div class="bio">
-	    <img id="headshot" alt="Headshot Photo" src="Images/profile-pic.jpg">
-	    <p>I am a senior Computer Information Systems (CIS) major with a concentration in Information Systems at  James Madison University. In my time at JMU I've been able to learn about various programming
-  	    languages such as Python, Java, C#, as well as other IT topics like cybersecurity, database management, and systems analysis.</p>
-    </div>
-</center>
-<h3 id="Portfolio">Portfolio</h3>
-<!-- Projects go here -->
-<h3 id="Resume">Resume</h3>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <span id="Home">
+    <h3>Home</h3>
+    <center>
+      <div class="bio">
+        <img id="headshot" alt="Headshot Photo" src="Images/profile-pic.jpg">
+        <p>I am a senior Computer Information Systems (CIS) major with a concentration in Information Systems at James Madison University. In my time at JMU, I've been able to learn about various programming languages such as Python, Java, C#, as well as other IT topics like cybersecurity, database management, and systems analysis.</p>
+      </div>
+    </center>
+  </span>
+
+  <h3 id="Resume">Resume</h3>
   <div class="container mt-5 mb-5">
     <div class="row">
         <div class="col-md-8 offset-md-2">
@@ -210,53 +211,61 @@ footer {
             </ul>
         </div>
     </div>
-</div>
+  </div>
 
-<h5>Skills</h5>
-<hr />
-    <center>
-        <img class="skills" alt="Python" src="Images/python-logo.png">
-        <img class="skills" alt="Java" src="Images/Java-Logo.png">
-        <img class="skills" alt="C#" src="Images/Logo_C_sharp.svg.png">
-        <img class="skills" alt="HTML" src="Images/free-html-5-1-1175208.png">
-        <img class="skills" alt="CSS" src="Images/6ejuoo.png">
-        <img class="skills" alt="Bootstrap" src="Images/bootstrap-logo.png">
-        <img class="skills" alt="Javascript" src="Images/js-logo.jpg">
-        <img class="skills" alt="MySQL" src="Images/sql-logo.png">
-    </center>
-<hr />
-<h5>Tools</h5>
-<hr />
-    <center>
-        <img class="skills" alt="GitHub" src="Images/githublogo.png">
-        <img class="skills" alt="Microsoft Office" src="Images/msoffic-logo.png">
-        <img class="skills" alt="Amazon Web Services" src="Images/aws-logo.png">
-        <img class="skills" alt="Azure" src="Images/azure-logo.png">
-        <img class="skills" alt="Trello" src="Images/Trello-logo.png">
-    </center>
-<hr />
-<br>
-<center><p>If you'd like to view my full resume in full detail click the button below.</p>
-<button type="button" class="btn btn-dark" onclick="window.open('Trevor-Hudson-Resume.pdf', '_blank')">Resume PDF</button></center>
-<h3 id="Contact">Contact</h3>
+  <h5>Skills</h5>
+  <hr />
+  <center>
+      <img class="skills" alt="Python" src="Images/python-logo.png">
+      <img class="skills" alt="Java" src="Images/Java-Logo.png">
+      <img class="skills" alt="C#" src="Images/Logo_C_sharp.svg.png">
+      <img class="skills" alt="HTML" src="Images/free-html-5-1-1175208.png">
+      <img class="skills" alt="CSS" src="Images/6ejuoo.png">
+      <img class="skills" alt="Bootstrap" src="Images/bootstrap-logo.png">
+      <img class="skills" alt="Javascript" src="Images/js-logo.jpg">
+      <img class="skills" alt="MySQL" src="Images/sql-logo.png">
+  </center>
+  <hr />
+  <h5>Tools</h5>
+  <hr />
+  <center>
+      <img class="skills" alt="GitHub" src="Images/githublogo.png">
+      <img class="skills" alt="Microsoft Office" src="Images/msoffic-logo.png">
+      <img class="skills" alt="Amazon Web Services" src="Images/aws-logo.png">
+      <img class="skills" alt="Azure" src="Images/azure-logo.png">
+      <img class="skills" alt="Trello" src="Images/Trello-logo.png">
+  </center>
+  <hr />
+  <br>
+  <center><p>If you'd like to view my full resume in full detail click the button below.</p>
+  <button type="button" class="btn btn-dark" onclick="window.open('Trevor-Hudson-Resume.pdf', '_blank')">Resume PDF</button></center>
+
+  <h3 id="Portfolio">Portfolio</h3>
+  <!-- Projects go here -->
+
+  <h3 id="Contact">Contact</h3>
 </section>
-    <form id="emailform" action="https://formspree.io/f/xkndppgo" method="POST">
-            <input type="email" id="email" placeholder="Email" name="_replyto" required><br>
-            <input type="text" id="subject" placeholder="Subject" name="subject" required><br>
-            <input id="message" name="message" placeholder="Type message here..." rows="4" required></input><br>
-            <input id="submit" type="submit" class="btn btn-dark" value="Send">
-    </form>
+
+<!-- Contact form -->
+<form id="emailform" action="https://formspree.io/f/xkndppgo" method="POST">
+  <input type="email" id="email" placeholder="Email" name="_replyto" required><br>
+  <input type="text" id="subject" placeholder="Subject" name="subject" required><br>
+  <input id="message" name="message" placeholder="Type message here..." rows="4" required></input><br>
+  <input id="submit" type="submit" class="btn btn-dark" value="Send">
+</form>
+
 <footer>
-    <center>
-        <a href="https://www.linkedin.com/in/trevor-h-9364a4202/" target="_blank"><img class="linkedin" src="Images/linkedinlogo.webp" alt="LinkedIn Logo"></a>
-        <a href="https://github.com/hudso2tj?tab=repositories" target="_blank"><img class="github" src="Images/githublogo.png" alt="GitHub Logo"></a>
-    </center>
-    <div class="modify-date">
-        <script type="text/javascript">
-          var date = document.lastModified;
-             document.write("Last Modified: "+ date);  
-        </script>
-    </div>
+  <center>
+      <a href="https://www.linkedin.com/in/trevor-h-9364a4202/" target="_blank"><img class="linkedin" src="Images/linkedinlogo.webp" alt="LinkedIn Logo"></a>
+      <a href="https://github.com/hudso2tj?tab=repositories" target="_blank"><img class="github" src="Images/githublogo.png" alt="GitHub Logo"></a>
+  </center>
+  <div class="modify-date">
+      <script type="text/javascript">
+        var date = document.lastModified;
+           document.write("Last Modified: "+ date);  
+      </script>
+  </div>
 </footer>
+
 </body>
 </html>
