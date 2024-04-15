@@ -62,7 +62,6 @@
 
         footer {
             background-color: #B599CE;
-            bottom: 0;
             width: 100%;
             font-style: italic;
             text-align: center;
@@ -129,34 +128,46 @@
             margin-bottom: 25px;
         }
 
+        /* Sticky Footer */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        #content {
+            flex: 1;
+        }
+
     </style>
 </head>
 
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #B599CE;">
-    <div class="container">
-        <a class="navbar-brand" href="#">Portfolio | TH</a>
-        <button class="navbar-toggler" type="button" onclick="toggleNav()">
-            Menu
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#Home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Contact">Contact</a>
-                </li>
-            </ul>
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio | TH</a>
+            <button class="navbar-toggler" type="button" onclick="toggleNav()">
+                Menu
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
-<a href="https://www.linkedin.com/in/trevor-h-9364a4202/" target="_blank"><img class="linkedin" src="Images/linkedinlogo.webp" alt="LinkedIn Logo"></a>
-            <a href="https://github.com/hudso2tj?tab=repositories" target="_blank"><img class="github" src="Images/githublogo.png" alt="GitHub Logo"></a>
+    </nav>
+
+    <a href="https://www.linkedin.com/in/trevor-h-9364a4202/" target="_blank"><img class="linkedin" src="Images/linkedinlogo.webp" alt="LinkedIn Logo"></a>
+    <a href="https://github.com/hudso2tj?tab=repositories" target="_blank"><img class="github" src="Images/githublogo.png" alt="GitHub Logo"></a>
 
     <script>
         function toggleNav() {
@@ -278,29 +289,30 @@
             <a href="https://github.com/hudso2tj/Madison-County-Collaborative-Site" target="_blank"><img alt="Madison County Collaborative System" src="Images/home-page.png"></a>
             <a href="https://github.com/hudso2tj/hudso2tj.github.io/tree/main" target="_blank"><img alt="Personal Portfolio Website" src="Images/portfolio-page"></a>
         </section>
+
     </div>
 
-    <section id="Contact">
-        <center>
-            <h3>Contact</h3>
-        </center>
-        <!-- Contact form -->
-        <form id="emailform" action="https://formspree.io/f/xkndppgo" method="POST">
-            <input type="email" id="email" placeholder="Email" name="_replyto" required><br>
-            <input type="text" id="subject" placeholder="Subject" name="subject" required><br>
-            <textarea id="message" name="message" placeholder="Type message here..." rows="4" required></textarea><br>
-            <input id="submit" type="submit" class="btn btn-dark" value="Send">
-        </form>
+    <!-- Footer -->
+    <footer>
+        <div class="modify-date">
+            <script type="text/javascript">
+                var date = document.lastModified;
+                document.write("Last Modified: " + date);
+            </script>
+        </div>
+    </footer>
 
-        <footer>
-            <div class="modify-date">
-                <script type="text/javascript">
-                    var date = document.lastModified;
-                    document.write("Last Modified: " + date);
-                </script>
-            </div>
-        </footer>
-    </section>
+    <!-- JavaScript for navigation toggle -->
+    <script>
+        function toggleNav() {
+            var nav = document.getElementById("navbarNav");
+            if (nav.style.display === "none" || nav.style.display === "") {
+                nav.style.display = "block";
+            } else {
+                nav.style.display = "none";
+            }
+        }
+    </script>
 
 </body>
 
