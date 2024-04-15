@@ -60,15 +60,6 @@
             margin: 0;
         }
 
-        footer {
-            background-color: #B599CE;
-            width: 100%;
-            font-style: italic;
-            text-align: center;
-            position: absolute;
-            bottom: 0;
-        }
-
         #emailform {
             text-align: center;
             background-color: #CEB599;
@@ -139,6 +130,14 @@
 
         #content {
             flex: 1;
+        }
+
+        footer {
+            background-color: #B599CE;
+            width: 100%;
+            font-style: italic;
+            text-align: center;
+            margin-top: auto;
         }
 
     </style>
@@ -306,16 +305,17 @@
             <textarea id="message" name="message" placeholder="Type message here..." rows="4" required></textarea><br>
             <input id="submit" type="submit" class="btn btn-dark" value="Send">
         </form>
-
-        <footer>
-            <div class="modify-date">
-                <script type="text/javascript">
-                    var date = document.lastModified;
-                    document.write("Last Modified: " + date);
-                </script>
-            </div>
-        </footer>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="modify-date">
+            <script type="text/javascript">
+                var date = document.lastModified;
+                document.write("Last Modified: " + date);
+            </script>
+        </div>
+    </footer>
 
     <!-- JavaScript for navigation toggle -->
     <script>
