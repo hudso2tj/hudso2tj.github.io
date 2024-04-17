@@ -83,7 +83,7 @@
         #submit {
             padding: 5px;
             box-sizing: border-box;
-            margin: 10px 0;
+            margin: 5px 0;
         }
 
         .modify-date {
@@ -156,11 +156,15 @@
         }
 
         #email-icon {
-            height: 25px;
+            height: 35px;
             width: auto;
             display: block;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        #submit {
+            padding: 5px;
         }
 
     </style>
@@ -321,7 +325,7 @@
             <h1>Get in touch</h1>
         </center>
         <!-- Contact form -->
-        <form action="https://formspree.io/f/xkndppgo" method="POST">
+        <form id="emailform" action="https://formspree.io/f/xkndppgo" method="POST">
             <input type="email" id="email" placeholder="Email" name="_replyto" required><br>
             <input type="text" id="subject" placeholder="Subject" name="subject" required><br>
             <textarea id="message" name="message" placeholder="Type message here..." rows="4" required></textarea><br>
