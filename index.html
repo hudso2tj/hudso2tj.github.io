@@ -182,6 +182,43 @@
             font-family: Forza;
         }
 
+        <!-- Project Card Dynamic -->
+
+        .card-container {
+            cursor: pointer;
+            height: 300px;
+            perspective: 600;
+            width: auto;
+        }
+
+        .card {
+            height: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+            transition: all 1s ease-in-out;
+            width: 100%;
+        }
+
+        .card: hover {
+            transform: rotateY(180deg);
+        }
+
+        .card .side {
+            backface-visibility: hidden;
+            height: 100%;
+            position: absolute;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .card .back {
+            background: #eaeaed;
+            color: #0087cc;
+            line-height: 150px;
+            text-align: center;
+            transform: rotateY(180deg);
+        }
+
 
     </style>
 </head>
@@ -340,9 +377,17 @@
 
         <section id="Projects">
             <h1>Projects</h1>
-            <a href="https://github.com/hudso2tj/Student-Management-System/tree/main" target="_blank"><img alt="Student Management System Project" src="Images/studentsystem.PNG"></a>
-            <a href="https://github.com/hudso2tj/Madison-County-Collaborative-Site" target="_blank"><img alt="Madison County Collaborative System" src="Images/home-page.png"></a>
-        </section>
+            <div class="card-container">
+                <div class="card">
+                    <div class="side">
+                        <a href="https://github.com/hudso2tj/Student-Management-System/tree/main" target="_blank"><img alt="Student Management System Project" src="Images/studentsystem.PNG"></a>
+                    </div>
+                    <div class="side back">A Java program developed as a console-based student enrollment system for a university.</div>
+                </div>
+            </div>
+                        <a href="https://github.com/hudso2tj/Madison-County-Collaborative-Site" target="_blank"><img alt="Madison County Collaborative System" src="Images/home-page.png"></a>
+        
+                </section>
 
     </div>
 
