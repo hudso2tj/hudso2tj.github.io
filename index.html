@@ -10,220 +10,233 @@
     <link rel="stylesheet" href="phone.css" type="text/css" media="screen and (max-width: 767px)" />
     <title>Portfolio | TH</title>
     <style>
-    @font-face {
-        font-family: Forza;
-        src: url(Forza-Book.ttf);
-    }
-    
-    .navbar-brand {
-        font-size: 1.5rem;
-    }
+        @font-face {
+            font-family: Forza;
+            src: url(Forza-Book.ttf);
+        }
 
-    #content {
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
-        min-height: 100vh;
-    }
+        .navbar-brand {
+            font-size: 1.5rem;
+        }
 
-    h3 {
-        text-align: center;
-        font-family: "Bebas Neue", sans-serif;
-    }
+        #content {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            min-height: 100vh;
+        }
 
-    h5 {
-        text-align: center;
-        padding: 25px;
-        font-family: "Bebas Neue", sans-serif;
-    }
+        h3 {
+            text-align: center;
+            font-family: "Bebas Neue", sans-serif;
+        }
 
-    h1 {
-        font-family: "Quantico", sans-serif;
-        width: 50%;
-        text-align: center;
-        margin-left: 25%;
-        margin-right: 25%;
-        margin-top: 25px;
-        margin-bottom: 25px;
-    }
+        h5 {
+            text-align: center;
+            padding: 25px;
+            font-family: "Bebas Neue", sans-serif;
+        }
 
-    .skills {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        margin: 20px 0;
-    }
+        h1 {
+            font-family: "Quantico", sans-serif;
+            width: 50%;
+            text-align: center;
+            margin-left: 25%;
+            margin-right: 25%;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
 
-    .skill-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 20px;
-        text-align: center;
-    }
+        .skills {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
 
-    .skill-item img {
-        height: 80px;
-        width: auto;
-        margin-bottom: 10px;
-        transition: transform 0.3s ease-in-out;
-    }
+        .skill-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+            text-align: center;
+        }
 
-    .skill-item img:hover {
-        transform: scale(1.4);
-    }
+        .skill-item img {
+            height: 80px;
+            width: auto;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
 
-    .skill-item p {
-        font-size: 16px;
-        margin: 0;
-        font-variant: small-caps;
-        font-weight: bold;
-    }
+        .skill-item img:hover {
+            transform: scale(1.4);
+        }
 
-    #Contact {
-        text-align: center;
-        background-color: #CEB599;
-    }
+        .skill-item p {
+            font-size: 16px;
+            margin: 0;
+            font-variant: small-caps;
+            font-weight: bold;
+        }
 
-    #emailform input[type="email"],
-    #emailform input[type="text"],
-    #emailform textarea,
-    #submit {
-        padding: 5px;
-        box-sizing: border-box;
-        margin: 5px 0;
-    }
+        #Contact {
+            text-align: center;
+            background-color: #CEB599;
+        }
 
-    .modify-date {
-        font-size: 0.75em;
-        float: right;
-    }
+        #emailform input[type="email"],
+        #emailform input[type="text"],
+        #emailform textarea,
+        #submit {
+            padding: 5px;
+            box-sizing: border-box;
+            margin: 5px 0;
+        }
 
-    #headshot {
-        height: 150px;
-        width: auto;
-        border-radius: 25px !important;
-        display: block;
-        margin-left: 25px;
-        margin-right: 25px;;
-        margin-top: 25px;
-        margin-bottom: 10px;
-    }
+        .modify-date {
+            font-size: 0.75em;
+            float: right;
+        }
 
-    .bio p {
-        width: 65%;
-        text-align: center;
-        margin-left: 20%;
-        margin-right: 20%;
-        font-family: Forza;
-    }
+        #headshot {
+            height: 150px;
+            width: auto;
+            border-radius: 25px !important;
+            display: block;
+            margin-left: 25px;
+            margin-right: 25px;
+            ;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
 
-    .linkedin,
-    .github {
-        height: 30px;
-        width: auto;
-    }
+        .bio p {
+            width: 65%;
+            text-align: center;
+            margin-left: 20%;
+            margin-right: 20%;
+            font-family: Forza;
+        }
 
-    .education {
-        text-align: center;
-        margin-top: 25px;
-    }
+        .linkedin,
+        .github {
+            height: 30px;
+            width: auto;
+        }
 
-    .education img {
-        height: 80px;
-        width: auto;
-        margin-bottom: 25px;
-    }
+        .education {
+            text-align: center;
+            margin-top: 25px;
+        }
 
-    body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        background-color: #efefef;
-    }
+        .education img {
+            height: 80px;
+            width: auto;
+            margin-bottom: 25px;
+        }
 
-    #content {
-        flex: 1;
-    }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #efefef;
+        }
 
-    footer {
-        background-color: #B599CE;
-        width: 100%;
-        font-style: italic;
-        text-align: center;
-        margin-top: auto;
-    }
+        #content {
+            flex: 1;
+        }
 
-    #email-icon {
-        height: 35px;
-        width: auto;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+        footer {
+            background-color: #B599CE;
+            width: 100%;
+            font-style: italic;
+            text-align: center;
+            margin-top: auto;
+        }
 
-    #submit {
-        padding: 5px;
-    }
+        #email-icon {
+            height: 35px;
+            width: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-    #Resume p, h6,
-    #Contact p {
-        font-family: Forza;
-    }
+        #submit {
+            padding: 5px;
+        }
 
-    #Projects img {
-        height: 300px;
-        width: auto;
-    }
+        #Resume p,
+        h6,
+        #Contact p {
+            font-family: Forza;
+        }
 
-    /* Project Card Dynamic */
-    
-    .flip-card {
-        background-color: transparent;
-        width: 300px;
-        height: 200px;
-        border: 1px solid #f1f1f1;
-        perspective: 1000px; /* Remove this if you don't want the 3D effect */
-    }
-    
-    /* This container is needed to position the front and back side */
-    .flip-card-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.8s;
-        transform-style: preserve-3d;
-    }
-    
-    /* Do an horizontal flip when you move the mouse over the flip box container */
-    .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
-    }
-    
-    /* Position the front and back side */
-    .flip-card-front, .flip-card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden; /* Safari */
-        backface-visibility: hidden;
-    }
-    
-    /* Style the front side (fallback if image is missing) */
-    .flip-card-front {
-        background-color: #bbb;
-        color: black;
-    }
-    
-    /* Style the back side */
-    .flip-card-back {
-        background-color: dodgerblue;
-        color: white;
-        transform: rotateY(180deg);
-    }
-</style>
+        #Projects img {
+            height: 300px;
+            width: auto;
+        }
+
+        /* Project Card Dynamic */
+
+        .flip-card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px; /* Adjust this value as needed for spacing between cards */
+        }
+
+        .flip-card {
+            background-color: transparent;
+            /* Remove width: 300px; from this class */
+            height: 200px;
+            border: 1px solid #f1f1f1;
+            perspective: 1000px; /* Remove this if you don't want the 3D effect */
+            margin-bottom: 20px; /* Add this to create space between cards */
+        }
+
+        /* This container is needed to position the front and back side */
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        /* Do an horizontal flip when you move the mouse over the flip box container */
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        /* Position the front and back side */
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            /* Safari */
+            backface-visibility: hidden;
+        }
+
+        /* Style the front side (fallback if image is missing) */
+        .flip-card-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        /* Style the back side */
+        .flip-card-back {
+            background-color: dodgerblue;
+            color: white;
+            transform: rotateY(180deg);
+        }
+    </style>
 </head>
 
 <body>
@@ -246,8 +259,10 @@
                         <a class="nav-link" href="#Contact">Contact</a>
                     </li>
                 </ul>
-                <a href="https://www.linkedin.com/in/trevor-h-9364a4202/" target="_blank"><img class="linkedin" src="Images/linkedinlogo.webp" alt="LinkedIn Logo"></a>
-                <a href="https://github.com/hudso2tj?tab=repositories" target="_blank"><img class="github" src="Images/githublogo.png" alt="GitHub Logo"></a>
+                <a href="https://www.linkedin.com/in/trevor-h-9364a4202/" target="_blank"><img class="linkedin"
+                        src="Images/linkedinlogo.webp" alt="LinkedIn Logo"></a>
+                <a href="https://github.com/hudso2tj?tab=repositories" target="_blank"><img class="github"
+                        src="Images/githublogo.png" alt="GitHub Logo"></a>
             </div>
         </div>
     </nav>
@@ -271,13 +286,14 @@
                 <h1>Trevor Hudson, Software Developer</h1>
                 <p>I am a senior Computer Information Systems (CIS) major with a concentration in Information Systems
                     at James Madison University. In my coursework at JMU, I got to know various programming
-                    languages such as Python, Java, C#, as well as front-end languages like HTML, CSS, and JavaScript. 
+                    languages such as Python, Java, C#, as well as front-end languages like HTML, CSS, and JavaScript.
                     Some of the other IT topics I've been exposed to consist of cybersecurity, database
                     management, and systems analysis.</p>
                 <p>In my career, I'll bring a strong worth ethic and curiosity to grow with the ability to work in teams thanks to
-                my extensive group project experience at JMU. </p>
+                    my extensive group project experience at JMU. </p>
                 <center>
-                    <button id="submit" type="button" class="btn btn-dark" onclick="window.open('Trevor-Hudson-Resume.pdf', '_blank')">Resume PDF</button>
+                    <button id="submit" type="button" class="btn btn-dark"
+                        onclick="window.open('Trevor-Hudson-Resume.pdf', '_blank')">Resume PDF</button>
                 </center>
             </div>
         </section>
@@ -299,8 +315,14 @@
 
             <h5>Certifications</h5>
             <center>
-            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="6b25a418-fdc8-4246-82c5-8c744a6f07b6" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="d4537a54-dde5-4b64-8374-dd12f4d56791" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                <div data-iframe-width="150" data-iframe-height="270"
+                    data-share-badge-id="6b25a418-fdc8-4246-82c5-8c744a6f07b6" data-share-badge-host="https://www.credly.com">
+                </div>
+                <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                <div data-iframe-width="150" data-iframe-height="270"
+                    data-share-badge-id="d4537a54-dde5-4b64-8374-dd12f4d56791" data-share-badge-host="https://www.credly.com">
+                </div>
+                <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
             </center>
             <h5>Skills</h5>
             <hr />
@@ -380,64 +402,70 @@
         </section>
 
         <section id="Projects">
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img alt="Student Management System Project" src="Images/studentsystem.PNG" style="width:auto;height:300px;">
+            <div class="flip-card-container">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img alt="Student Management System Project" src="Images/studentsystem.PNG"
+                                style="width:auto;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Student Enrollment System</h1>
+                            <p>A Java program developed as a console-based student enrollment system for a
+                                university.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="flip-card-back">
-                    <h1>Student Enrollment System</h1>
-                    <p>A Java program developed as a console-based student enrollment system for a university.</p>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img alt="Madison County Collaborative System" src="Images/home-page.png"
+                                style="width:auto;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Madison County Collaborative System</h1>
+                            <p>A collaborative web application developed for Madison County Government.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img alt="Madison County Collaborative System" src="Images/home-page.png" style="width:auto;height:300px;">
-                </div>
-                <div class="flip-card-back">
-                    <h1>Madison County Collaborative System</h1>
-                    <p>A collaborative web application developed for Madison County Government.</p>
-                </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="Contact">
+            <center>
+                <h1>Get in touch</h1>
+            </center>
+            <!-- Contact form -->
+            <form id="emailform" action="https://formspree.io/f/xkndppgo" method="POST">
+                <input type="email" id="email" placeholder="Email" name="_replyto" required><br>
+                <input type="text" id="subject" placeholder="Subject" name="subject" required><br>
+                <textarea id="message" name="message" placeholder="Type message here..." rows="4"
+                    required></textarea><br>
+                <input id="submit" type="submit" class="btn btn-dark" value="Send">
+            </form>
+            <a href="mailto:hudsontj20@gmail.com"><img id="email-icon" src="Images/email-icon.webp"></a>
+            <p>Email me at:<br><a href="mailto:hudsontj20@gmail.com">hudsontj20@gmail.com</a></p>
+            <div class="modify-date">
+                <script type="text/javascript">
+                    var date = document.lastModified;
+                    document.write("Last Modified: " + date);
+                </script>
             </div>
-        </div>
-      </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="Contact">
-        <center>
-            <h1>Get in touch</h1>
-        </center>
-        <!-- Contact form -->
-        <form id="emailform" action="https://formspree.io/f/xkndppgo" method="POST">
-            <input type="email" id="email" placeholder="Email" name="_replyto" required><br>
-            <input type="text" id="subject" placeholder="Subject" name="subject" required><br>
-            <textarea id="message" name="message" placeholder="Type message here..." rows="4" required></textarea><br>
-            <input id="submit" type="submit" class="btn btn-dark" value="Send">
-        </form>
-        <a href="mailto:hudsontj20@gmail.com"><img id="email-icon" src="Images/email-icon.webp"></a>
-        <p>Email me at:<br><a href="mailto:hudsontj20@gmail.com">hudsontj20@gmail.com</a></p>
-        <div class="modify-date">
-            <script type="text/javascript">
-                var date = document.lastModified;
-                document.write("Last Modified: " + date);
-            </script>
-        </div>
-    </section>
-
-    <!-- JavaScript for navigation toggle -->
-    <script>
-        function toggleNav() {
-            var nav = document.getElementById("navbarNav");
-            if (nav.style.display === "none" || nav.style.display === "") {
-                nav.style.display = "block";
-            } else {
-                nav.style.display = "none";
+        <!-- JavaScript for navigation toggle -->
+        <script>
+            function toggleNav() {
+                var nav = document.getElementById("navbarNav");
+                if (nav.style.display === "none" || nav.style.display === "") {
+                    nav.style.display = "block";
+                } else {
+                    nav.style.display = "none";
+                }
             }
-        }
-    </script>
+        </script>
 
 </body>
 
