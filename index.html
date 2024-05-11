@@ -10,221 +10,220 @@
     <link rel="stylesheet" href="phone.css" type="text/css" media="screen and (max-width: 767px)" />
     <title>Portfolio | TH</title>
     <style>
-        @font-face {
-            font-family: Forza;
-            src: url(Forza-Book.ttf);
-        }
-        
-        .navbar-brand {
-            font-size: 1.5rem;
-        }
+    @font-face {
+        font-family: Forza;
+        src: url(Forza-Book.ttf);
+    }
+    
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
 
-        #content {
-            margin-left: auto;
-            margin-right: auto;
-            width: 80%;
-            min-height: 100vh;
-        }
+    #content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        min-height: 100vh;
+    }
 
-        h3 {
-            text-align: center;
-            font-family: "Bebas Neue", sans-serif;
-        }
+    h3 {
+        text-align: center;
+        font-family: "Bebas Neue", sans-serif;
+    }
 
-        h5 {
-            text-align: center;
-            padding: 25px;
-            font-family: "Bebas Neue", sans-serif;
-        }
+    h5 {
+        text-align: center;
+        padding: 25px;
+        font-family: "Bebas Neue", sans-serif;
+    }
 
-        h1 {
-            font-family: "Quantico", sans-serif;
-            width: 50%;
-            text-align: center;
-            margin-left: 25%;
-            margin-right: 25%;
-            margin-top: 25px;
-            margin-bottom: 25px;
-        }
+    h1 {
+        font-family: "Quantico", sans-serif;
+        width: 50%;
+        text-align: center;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
 
-        .skills {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            margin: 20px 0;
-        }
+    .skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 20px 0;
+    }
 
-        .skill-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 20px;
-            text-align: center;
-        }
+    .skill-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        text-align: center;
+    }
 
-        .skill-item img {
-            height: 80px;
-            width: auto;
-            margin-bottom: 10px;
-            transition: transform 0.3s ease-in-out;
-        }
+    .skill-item img {
+        height: 80px;
+        width: auto;
+        margin-bottom: 10px;
+        transition: transform 0.3s ease-in-out;
+    }
 
-        .skill-item img:hover {
-            transform: scale(1.4);
-        }
+    .skill-item img:hover {
+        transform: scale(1.4);
+    }
 
-        .skill-item p {
-            font-size: 16px;
-            margin: 0;
-            font-variant: small-caps;
-            font-weight: bold;
-        }
+    .skill-item p {
+        font-size: 16px;
+        margin: 0;
+        font-variant: small-caps;
+        font-weight: bold;
+    }
 
-        #Contact {
-            text-align: center;
-            background-color: #CEB599;
-        }
+    #Contact {
+        text-align: center;
+        background-color: #CEB599;
+    }
 
-        #emailform input[type="email"],
-        #emailform input[type="text"],
-        #emailform textarea,
-        #submit {
-            padding: 5px;
-            box-sizing: border-box;
-            margin: 5px 0;
-        }
+    #emailform input[type="email"],
+    #emailform input[type="text"],
+    #emailform textarea,
+    #submit {
+        padding: 5px;
+        box-sizing: border-box;
+        margin: 5px 0;
+    }
 
-        .modify-date {
-            font-size: 0.75em;
-            float: right;
-        }
+    .modify-date {
+        font-size: 0.75em;
+        float: right;
+    }
 
-        #headshot {
-            height: 150px;
-            width: auto;
-            border-radius: 25px !important;
-            display: block;
-            margin-left: 25px;
-            margin-right: 25px;;
-            margin-top: 25px;
-            margin-bottom: 10px;
-        }
+    #headshot {
+        height: 150px;
+        width: auto;
+        border-radius: 25px !important;
+        display: block;
+        margin-left: 25px;
+        margin-right: 25px;;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
 
-        .bio p {
-            width: 65%;
-            text-align: center;
-            margin-left: 20%;
-            margin-right: 20%;
-            font-family: Forza;
-        }
+    .bio p {
+        width: 65%;
+        text-align: center;
+        margin-left: 20%;
+        margin-right: 20%;
+        font-family: Forza;
+    }
 
-        .linkedin,
-        .github {
-            height: 30px;
-            width: auto;
-        }
+    .linkedin,
+    .github {
+        height: 30px;
+        width: auto;
+    }
 
-        .education {
-            text-align: center;
-            margin-top: 25px;
-        }
+    .education {
+        text-align: center;
+        margin-top: 25px;
+    }
 
-        .education img {
-            height: 80px;
-            width: auto;
-            margin-bottom: 25px;
-        }
+    .education img {
+        height: 80px;
+        width: auto;
+        margin-bottom: 25px;
+    }
 
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            background-color: #efefef;
-        }
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: #efefef;
+    }
 
-        #content {
-            flex: 1;
-        }
+    #content {
+        flex: 1;
+    }
 
-        footer {
-            background-color: #B599CE;
-            width: 100%;
-            font-style: italic;
-            text-align: center;
-            margin-top: auto;
-        }
+    footer {
+        background-color: #B599CE;
+        width: 100%;
+        font-style: italic;
+        text-align: center;
+        margin-top: auto;
+    }
 
-        #email-icon {
-            height: 35px;
-            width: auto;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
+    #email-icon {
+        height: 35px;
+        width: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-        #submit {
-            padding: 5px;
-        }
+    #submit {
+        padding: 5px;
+    }
 
-        #Resume p, h6,
-        #Contact p {
-            font-family: Forza;
-        }
+    #Resume p, h6,
+    #Contact p {
+        font-family: Forza;
+    }
 
-        #Projects img {
-            height: 300px;
-            width: auto;
+    #Projects img {
+        height: 300px;
+        width: auto;
+    }
 
-        <!-- Project Card Dynamic -->
-        
-        .flip-card {
-          background-color: transparent;
-          width: 300px;
-          height: 200px;
-          border: 1px solid #f1f1f1;
-          perspective: 1000px; /* Remove this if you don't want the 3D effect */
-        }
-        
-        /* This container is needed to position the front and back side */
-        .flip-card-inner {
-          position: relative;
-          width: 100%;
-          height: 100%;
-          text-align: center;
-          transition: transform 0.8s;
-          transform-style: preserve-3d;
-        }
-        
-        /* Do an horizontal flip when you move the mouse over the flip box container */
-        .flip-card:hover .flip-card-inner {
-          transform: rotateY(180deg);
-        }
-        
-        /* Position the front and back side */
-        .flip-card-front, .flip-card-back {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          -webkit-backface-visibility: hidden; /* Safari */
-          backface-visibility: hidden;
-        }
-        
-        /* Style the front side (fallback if image is missing) */
-        .flip-card-front {
-          background-color: #bbb;
-          color: black;
-        }
-        
-        /* Style the back side */
-        .flip-card-back {
-          background-color: dodgerblue;
-          color: white;
-          transform: rotateY(180deg);
-        }
-
-
-    </style>
+    /* Project Card Dynamic */
+    
+    .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 200px;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    }
+    
+    /* This container is needed to position the front and back side */
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+    
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+    
+    /* Position the front and back side */
+    .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+    }
+    
+    /* Style the front side (fallback if image is missing) */
+    .flip-card-front {
+        background-color: #bbb;
+        color: black;
+    }
+    
+    /* Style the back side */
+    .flip-card-back {
+        background-color: dodgerblue;
+        color: white;
+        transform: rotateY(180deg);
+    }
+</style>
 </head>
 
 <body>
