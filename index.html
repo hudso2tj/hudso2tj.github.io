@@ -181,22 +181,23 @@
 
         /* Project Card Dynamic */
 
+        /* Project Card Dynamic */
+
         .flip-card-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-wrap: wrap;
-            gap: 20px; /* Adjust this value as needed for spacing between cards */
         }
-
+        
         .flip-card {
             background-color: transparent;
-            /* Remove width: 300px; from this class */
+            width: 300px;
             height: 200px;
             border: 1px solid #f1f1f1;
             perspective: 1000px; /* Remove this if you don't want the 3D effect */
-            margin-bottom: 20px; /* Add this to create space between cards */
+            margin: 0 10px; /* Add margin to create space between flip cards */
         }
+
 
         /* This container is needed to position the front and back side */
         .flip-card-inner {
