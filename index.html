@@ -180,6 +180,18 @@
             width: auto;
         }
 
+        .education-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        .education-item {
+            width: 45%; /* Adjust width as needed */
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
         /* Project Card Dynamic */
 
         .flip-card-container {
@@ -302,19 +314,23 @@
 
         <section id="Resume">
             <div class="education">
-                <h5>Education</h5>
-                <img alt="JMU Seal" src="Images/jmu-seal.svg">
-                <h6>James Madison University</h6>
-                <h6>2020 - 2024</h6>
-                <p>Computer Information Systems BBA<br>Information Systems Concentration<br>Major GPA: 3.83</p>
-                <br>
-                <img alt="BHS Seal" src="Images/bhs-logo.webp">
-                <h6>Battlefield High School</h6>
-                <h6>2016 - 2020</h6>
-                <p>Advanced Diploma<br>Silver CASIIT Award<br>GPA: 3.47</p>
-                <br>
+        <h5>Education</h5>
+            <div class="education-container">
+                <div id="college" class="education-item">
+                    <img alt="JMU Seal" src="Images/jmu-seal.svg">
+                    <h6>James Madison University</h6>
+                    <h6>2020 - 2024</h6>
+                    <p>Computer Information Systems BBA<br>Information Systems Concentration<br>Major GPA: 3.68</p>
+                </div>
+                <div id="hs" class="education-item">
+                    <img alt="BHS Seal" src="Images/bhs-logo.webp">
+                    <h6>Battlefield High School</h6>
+                    <h6>2016 - 2020</h6>
+                    <p>Advanced Diploma<br>Silver CASIIT Award<br>GPA: 3.47</p>
+                    </div>
+                </div>
+            <br>
             </div>
-
             <h5>Certifications</h5>
             <center>
                 <div data-iframe-width="150" data-iframe-height="270"
