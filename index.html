@@ -205,12 +205,11 @@
             width: 300px;
             height: 200px;
             border: 1px solid #f1f1f1;
-            perspective: 1000px; /* Remove this if you don't want the 3D effect */
-            margin: 0 10px; /* Add margin to create space between flip cards */
+            perspective: 1000px; 
+            margin: 0 10px; 
         }
 
 
-        /* This container is needed to position the front and back side */
         .flip-card-inner {
             position: relative;
             width: 100%;
@@ -220,31 +219,26 @@
             transform-style: preserve-3d;
         }
 
-        /* Do an horizontal flip when you move the mouse over the flip box container */
         .flip-card:hover .flip-card-inner {
             transform: rotateY(180deg);
         }
 
-        /* Position the front and back side */
         .flip-card-front,
         .flip-card-back {
             position: absolute;
             width: 100%;
             height: 100%;
             -webkit-backface-visibility: hidden;
-            /* Safari */
             backface-visibility: hidden;
             height: 300px;
             width: auto;
         }
 
-        /* Style the front side (fallback if image is missing) */
         .flip-card-front {
             background-color: #bbb;
             color: black;
         }
 
-        /* Style the back side */
         .flip-card-back {
             background-color: #B599CE;
             color: white;
@@ -302,9 +296,8 @@
         <section id="Home">
             <div class="bio">
                 <center><img id="headshot" alt="Headshot Photo" src="Images/profile-pic.jpg"></center>
-                <h1>Trevor Hudson, Software Developer</h1>
-                <p>I am a senior Computer Information Systems (CIS) major with a concentration in Information Systems
-                    at James Madison University. In my coursework at JMU, I got to know various programming
+                <h1>Trevor Hudson<br>Software Developer</h1>
+                <p>I am a recent graduate in Computer Information Systems (CIS) at James Madison University. In my coursework at JMU, I got to know various programming
                     languages such as Python, Java, C#, as well as front-end languages like HTML, CSS, and JavaScript.
                     Some of the other IT topics I've been exposed to consist of cybersecurity, database
                     management, and systems analysis.</p>
