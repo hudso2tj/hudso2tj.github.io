@@ -182,15 +182,17 @@
 
         .education-container {
             display: flex;
-            justify-content: flex-start; /* Align items to the start */
+            justify-content: center;
             flex-wrap: wrap;
         }
-        
+
+        .education-wrapper {
+            width: 50%;
+            margin-bottom: 10px;
+        }
+
         .education-item {
-            width: 50%; /* Adjust width as needed */
-            margin-bottom: 10px; /* Decrease margin-bottom to reduce space */
-            margin-right: 20px;
-            margin-left: 20px;
+            width: 100%;
             text-align: center;
         }
 
@@ -327,24 +329,27 @@
 
         <span id="Education"></span>
         <section id="Resume">
-            <div class="education">
-        <h5>Education</h5>
+            <h5>Education</h5>
             <div class="education-container">
-                <div id="college" class="education-item">
-                    <img alt="JMU Seal" src="Images/jmu-seal.svg">
-                    <h6>James Madison University</h6>
-                    <h6>2020 - 2024</h6>
-                    <p>Computer Information Systems BBA<br>Information Systems Concentration<br>Major GPA: 3.68</p>
-                </div>
-                <div id="hs" class="education-item">
-                    <img alt="BHS Seal" src="Images/bhs-logo.webp">
-                    <h6>Battlefield High School</h6>
-                    <h6>2016 - 2020</h6>
-                    <p>Advanced Diploma<br>Silver CASIIT Award<br>GPA: 3.47</p>
+                <div class="education-wrapper">
+                    <div id="college" class="education-item">
+                        <img alt="JMU Seal" src="Images/jmu-seal.svg">
+                        <h6>James Madison University</h6>
+                        <h6>2020 - 2024</h6>
+                        <p>Computer Information Systems BBA<br>Information Systems Concentration<br>Major GPA: 3.68</p>
                     </div>
                 </div>
-            <br>
+                <div class="education-wrapper">
+                    <div id="hs" class="education-item">
+                        <img alt="BHS Seal" src="Images/bhs-logo.webp">
+                        <h6>Battlefield High School</h6>
+                        <h6>2016 - 2020</h6>
+                        <p>Advanced Diploma<br>Silver CASIIT Award<br>GPA: 3.47</p>
+                    </div>
+                </div>
             </div>
+            <br>
+        </section>
 
             <span id="Certifications"></span>
             <h5>Certifications</h5>
