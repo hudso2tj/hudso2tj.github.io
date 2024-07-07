@@ -22,7 +22,6 @@
             background-color: #B599CE;
         }
 
-
         .navbar-brand {
             font-size: 1.5rem;
         }
@@ -203,7 +202,7 @@
         .flip-card-container {
             display: flex;
             justify-content: center;
-            align-items: center;
+            flex-wrap: wrap;
         }
         
         .flip-card {
@@ -212,7 +211,7 @@
             height: 200px;
             border: 1px solid #f1f1f1;
             perspective: 1000px; 
-            margin: 0 10px; 
+            margin: 10px; 
             border-radius: 10%;
         }
 
@@ -329,228 +328,197 @@
             </div>
         </section>
 
-        <span id="Education"></span>
-        <section id="Resume">
-            <h5>Education</h5>
+        <hr>
+        <section id="Education">
+            <h3>Education</h3>
             <div class="education-container">
-                <div class="education-wrapper">
-                    <div id="college" class="education-item">
-                        <span class="education"><img alt="JMU Seal" src="Images/jmu-seal.svg"></span>
-                        <h6>James Madison University</h6>
-                        <h6>2020 - 2024</h6>
-                        <p>Computer Information Systems BBA<br>Information Systems Concentration<br>Major GPA: 3.54</p>
-                    </div>
-                </div>
-                <div class="education-wrapper">
-                    <div id="hs" class="education-item">
-                        <span class="education"><img alt="BHS Seal" src="Images/bhs-logo.webp"></span>
-                        <h6>Battlefield High School</h6>
-                        <h6>2016 - 2020</h6>
-                        <p>Advanced Diploma<br>Silver CASIIT Award<br>GPA: 3.47</p>
-                    </div>
+                <div class="education-item">
+                    <img alt="James Madison University" src="Images/jmu.png">
+                    <h5>James Madison University</h5>
+                    <h5>Computer Information Systems (BBA)</h5>
+                    <h5>Graduation Date: May 2023</h5>
                 </div>
             </div>
-            <br>
         </section>
+        <hr>
 
-            <span id="Certifications"></span>
-            <h5>Certifications</h5>
-            <center>
-                <div data-iframe-width="150" data-iframe-height="270"
-                    data-share-badge-id="6b25a418-fdc8-4246-82c5-8c744a6f07b6" data-share-badge-host="https://www.credly.com">
+        <section id="Certifications">
+            <h3>Certifications</h3>
+            <div class="education-container">
+                <div class="education-item">
+                    <img alt="Google Cybersecurity" src="Images/google.jpg">
+                    <h5>Google Cybersecurity Professional Certificate</h5>
                 </div>
-                <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-                <div data-iframe-width="150" data-iframe-height="270"
-                    data-share-badge-id="d4537a54-dde5-4b64-8374-dd12f4d56791" data-share-badge-host="https://www.credly.com">
+                <div class="education-item">
+                    <img alt="AWS Certified Cloud Practitioner" src="Images/aws-certified-cloud-practitioner.png">
+                    <h5>AWS Certified Cloud Practitioner</h5>
                 </div>
-                <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-            </center>
+            </div>
+        </section>
+        <hr>
 
-            <span id="Skills"></span>
-            <h5>Skills</h5>
-            <hr />
+        <section id="Skills">
+            <h3>Skills</h3>
             <div class="skills">
                 <div class="skill-item">
-                    <img alt="Python" src="Images/python-logo.png">
-                    <p>Python</p>
+                    <img src="Images/HTML5.png" alt="HTML5">
+                    <p>HTML5</p>
                 </div>
                 <div class="skill-item">
-                    <img alt="HTML" src="Images/free-html-5-1-1175208.png">
-                    <p>HTML</p>
+                    <img src="Images/CSS3.png" alt="CSS3">
+                    <p>CSS3</p>
                 </div>
                 <div class="skill-item">
-                    <img alt="CSS" src="Images/6ejuoo.png">
-                    <p>CSS</p>
-                </div>
-                <div class="skill-item">
-                    <img alt="MySQL" src="Images/sql-logo.png">
-                    <p>MySQL</p>
-                </div>
-                <div class="skill-item">
-                    <img alt="JavaScript" src="Images/js-logo.svg">
+                    <img src="Images/javascript.png" alt="JavaScript">
                     <p>JavaScript</p>
                 </div>
                 <div class="skill-item">
-                    <img alt="Java" src="Images/java-logo.png">
-                    <p>Java</p>
-                </div>
-                <div class="skill-item">
-                    <img alt="Bootstrap" src="Images/bootstrap-logo.svg">
-                    <p>Bootstrap</p>
-                </div>
-                <div class="skill-item">
-                    <img alt="C#" src="Images/Logo_C_sharp.svg.png">
+                    <img src="Images/c-sharp.png" alt="C#">
                     <p>C#</p>
                 </div>
                 <div class="skill-item">
-                    <img alt="JQuery" src="Images/jquery.svg">
-                    <p>JQuery</p>
+                    <img src="Images/python.png" alt="Python">
+                    <p>Python</p>
+                </div>
+                <div class="skill-item">
+                    <img src="Images/java.png" alt="Java">
+                    <p>Java</p>
                 </div>
             </div>
+        </section>
 
-            <span id="Tools"></span>
-            <h5>Tools</h5>
-            <hr />
+        <hr>
+        <section id="Tools">
+            <h3>Tools</h3>
             <div class="skills">
                 <div class="skill-item">
-                    <img alt="GitHub" src="Images/githublogo.png">
-                    <p>GitHub</p>
-                </div>
-                <div class="skill-item">
-                    <img alt="Microsoft Office" src="Images/msoffic-logo.png">
-                    <p>Microsoft Office</p>
-                </div>
-                <div class="skill-item">
-                    <img alt="Amazon Web Services" src="Images/aws-logo.png">
-                    <p>Amazon Web Services</p>
-                </div>
-                <div class="skill-item">
-                    <img alt="Azure" src="Images/azure-logo.png">
-                    <p>Azure</p>
-                </div>
-                <div class="skill-item">
-                    <img alt="Trello" src="Images/trello-logo.svg">
-                    <p>Trello</p>
-                </div>
-                <div class="skill-item">
-                    <img alt="VS Code" src="Images/vs-logo.png">
+                    <img src="Images/vs.png" alt="Visual Studio">
                     <p>Visual Studio</p>
                 </div>
                 <div class="skill-item">
-                    <img alt="ASP.NET" src="Images/asp-logo.png">
-                    <p>ASP.NET</p>
+                    <img src="Images/vscode.png" alt="Visual Studio Code">
+                    <p>VS Code</p>
+                </div>
+                <div class="skill-item">
+                    <img src="Images/trello.jpg" alt="Trello">
+                    <p>Trello</p>
+                </div>
+                <div class="skill-item">
+                    <img src="Images/teams.png" alt="Microsoft Teams">
+                    <p>Teams</p>
+                </div>
+                <div class="skill-item">
+                    <img src="Images/git.png" alt="Git">
+                    <p>Git</p>
+                </div>
+                <div class="skill-item">
+                    <img src="Images/github.png" alt="GitHub">
+                    <p>GitHub</p>
+                </div>
+                <div class="skill-item">
+                    <img src="Images/mysql.png" alt="MySQL">
+                    <p>MySQL</p>
                 </div>
             </div>
-            <br>
         </section>
+        <hr>
 
         <section id="Projects">
             <h3>Projects</h3>
-            <div class="flip-card-container">
-                <a href="https://github.com/hudso2tj/Salary-Calculator" target="_blank">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img alt="Salary Calculator" src="Images/pythonproject.png">
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Salary Calculator</h3>
-                            <p>A Python program used to aid in calculating salary after federal and state income tax.</p>
-                            <p><span class="badge badge-pill badge-dark">Python</span></p>
-                        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="https://github.com/hudso2tj/Salary-Calculator" target="_blank">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img alt="Salary Calculator" src="Images/pythonproject.png">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h3>Salary Calculator</h3>
+                                        <p>A Python program used to aid in calculating salary after federal and state income tax.</p>
+                                        <p><span class="badge badge-pill badge-dark">Python</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                    </a>
-                </div>
-                <a href="https://github.com/hudso2tj/Student-Management-System" target="_blank">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img alt="Student Management System Project" src="Images/studentsystem.PNG">
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Student Enrollment System</h3>
-                            <p>A Java program developed as a console-based student enrollment system for a
-                                university.</p>
-                            <p><span class="badge badge-pill badge-dark">Java</span></p>
-                        </div>
+                    <div class="col-md-4">
+                        <a href="https://github.com/hudso2tj/Student-Management-System" target="_blank">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img alt="Student Management System Project" src="Images/studentsystem.PNG">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h3>Student Enrollment System</h3>
+                                        <p>A Java program developed as a console-based student enrollment system for a university.</p>
+                                        <p><span class="badge badge-pill badge-dark">Java</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                    </a>
-                </div>
-                
-                <div class="flip-card">
-                    <a href=" https://github.com/hudso2tj/Madison-County-Collaborative-Site" target="_blank">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img alt="Madison County Collaborative System" src="Images/home-page.png">
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Madison County Collaborative System</h3>
-                            <p>A collaborative web application developed for Madison County Government.</p>
-                            <p><span class="badge badge-pill badge-dark">C#</span><span class="badge badge-pill badge-dark">MySQL</span><span class="badge badge-pill badge-dark">Bootstrap</span>
-                            <span class="badge badge-pill badge-dark">HMTL</span><span class="badge badge-pill badge-dark">CSS</span><span class="badge badge-pill badge-dark">Trello</span>
-                            <span class="badge badge-pill badge-dark">Visual Studio</span><span class="badge badge-pill badge-dark">Microsoft SQL Server</span><span class="badge badge-pill badge-dark">Microsoft Teams</span>
-                            <span class="badge badge-pill badge-dark">Azure</span><span class="badge badge-pill badge-dark">GitHub</span></p>
-                        </div>
+                    <div class="col-md-4">
+                        <a href="https://github.com/hudso2tj/Madison-County-Collaborative-Site" target="_blank">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img alt="Madison County Collaborative System" src="Images/home-page.png">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h3>Madison County Collaborative System</h3>
+                                        <p>A collaborative web application developed for Madison County Government.</p>
+                                        <p><span class="badge badge-pill badge-dark">C#</span><span class="badge badge-pill badge-dark">MySQL</span><span class="badge badge-pill badge-dark">Bootstrap</span><span class="badge badge-pill badge-dark">HTML</span><span class="badge badge-pill badge-dark">CSS</span><span class="badge badge-pill badge-dark">Trello</span><span class="badge badge-pill badge-dark">Visual Studio</span><span class="badge badge-pill badge-dark">Microsoft SQL Server</span><span class="badge badge-pill badge-dark">Microsoft Teams</span><span class="badge badge-pill badge-dark">Azure</span><span class="badge badge-pill badge-dark">GitHub</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://github.com/hudso2tj/Financial-Application" target="_blank">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img alt="Financial Application" src="Images/financial-app.PNG">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h3>Financial Application (WIP)</h3>
+                                        <p>A .NET Razor Page Web Application with multiple financial tools and calculators to assist in personal finances.</p>
+                                        <p><span class="badge badge-pill badge-dark">C#</span><span class="badge badge-pill badge-dark">HTML</span><span class="badge badge-pill badge-dark">CSS</span><span class="badge badge-pill badge-dark">Bootstrap</span><span class="badge badge-pill badge-dark">JavaScript</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                </a>
             </div>
-
-            <!-- <a href="https://github.com/hudso2tj/Student-Management-System" target="_blank"> -->
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img alt="Financial Application" src="Images/financial-app.PNG">
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Financial Application (WIP)</h3>
-                            <p>A .NET Razor Page Web Application with multiple financial tools and calculators to assist in personal finances.</p>
-                            <p><span class="badge badge-pill badge-dark">C#</span><span class="badge badge-pill badge-dark">HTML</span><span class="badge badge-pill badge-dark">CSS</span>
-                            <span class="badge badge-pill badge-dark">Bootstrap</span><span class="badge badge-pill badge-dark">JavaScript</span></p>
-                        </div>
-                    </div>
-                    </a>
-                </div>
         </section>
-</div>
-        <!-- Contact Section -->
+
+        <hr>
         <section id="Contact">
-            <center>
-                <h1>Get in touch</h1>
-            </center>
-            <!-- Contact form -->
-            <form id="emailform" action="https://formspree.io/f/xkndppgo" method="POST">
-                <input type="email" id="email" placeholder="Email" name="_replyto" required><br>
-                <input type="text" id="subject" placeholder="Subject" name="subject" required><br>
-                <textarea id="message" name="message" placeholder="Type message here..." rows="4"
-                    required></textarea><br>
-                <input id="submit" type="submit" class="btn btn-dark" value="Send">
-            </form>
-            <p>Email me at:<br><a href="mailto:hudsontj20@gmail.com">hudsontj20@gmail.com</a></p>
-            <center>
-                <a href="mailto:hudsontj20@gmail.com"><img class="email-icon" src="Images/email-icon.webp"></a>
-                <a href="https://www.linkedin.com/in/trevor-h-9364a4202/" target="_blank"><img class="linkedin" src="Images/linkedinlogo.svg" alt="LinkedIn Logo"></a>
-                <a href="https://github.com/hudso2tj?tab=repositories" target="_blank"><img class="github" src="Images/githublogo.png" alt="GitHub Logo"></a>
-            </center>
-            <div class="modify-date">
-                <script type="text/javascript">
-                    var date = document.lastModified;
-                    document.write("Last Modified: " + date);
-                </script>
+            <h3>Contact</h3>
+            <div>
+                <form id="emailform" method="POST" action="mailto:your-email@example.com">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+                    <input type="submit" id="submit" value="Submit">
+                </form>
             </div>
         </section>
 
-        <script>
-            function toggleNav() {
-                var nav = document.getElementById("navbarNav");
-                if (nav.style.display === "none" || nav.style.display === "") {
-                    nav.style.display = "block";
-                } else {
-                    nav.style.display = "none";
-                }
-            }
-        </script>
+    </div>
 
+    <footer>
+        <p>© Trevor Hudson, 2024</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
