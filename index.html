@@ -224,6 +224,23 @@
             margin-top: 20px;
             padding: 10px;
         }
+
+        .skill-card {
+          position: relative;
+          padding: 1rem;
+          background: #fff;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+          transition: transform 0.2s ease;
+        }
+        .skill-card:hover .hidden-desc {
+          display: block;
+        }
+        .hidden-desc {
+          display: none;
+          font-size: 0.9rem;
+          color: #555;
+        }
         
     </style>
 </head>
@@ -358,6 +375,10 @@
                 </div>
                 <div class="skill-item">
                     <p>ASP.NET</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Requirements Gathering</h4>
+                    <p class="hidden-desc">Interviewed users, created user stories, and mapped business needs to technical solutions.</p>
                 </div>
             </div>
             <span id="Tools"></span>
