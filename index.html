@@ -226,17 +226,15 @@
           background: #fff;
           border-radius: 10px;
           box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-          transition: transform 2s ease;
-          margin-left: 10px;
-          margin-right: 10px;
-          margin-top: 10px;
-          margin-bottom: 10px;
+          transition: transform 0.3s ease; /* 2s is a bit slow for hover — 0.3s is smoother */
+          margin: 10px;
           width: 250px;
           background-color: #B599CE;
+          transform: scale(1); /* default scale */
         }
-
-        .skill-card h5 {
-          word-wrap: break-word;
+        
+        .skill-card:hover {
+          transform: scale(1.05); /* scale up slightly */
         }
         
         .skill-card:hover .hidden-desc {
@@ -534,6 +532,7 @@
             </div>
         </a>
     </div>
+    <br />
 </section>
 
 <section id="analyst-projects">
