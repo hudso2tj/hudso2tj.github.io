@@ -297,17 +297,6 @@
 	margin-bottom: 20px;
 	font-weight: 600;
 }
-/*.section-title h4:before {
-	position: absolute;
-	content: "";
-	width: 60px;
-	height: 2px;
-	background-color: #B599CE;
-	bottom: 0;
-	left: 50%;
-	margin-left: -30px;
-} */
-
 ul.timeline-list {
 	position: relative;
 	margin: 0;
@@ -361,6 +350,13 @@ ul.timeline-list li:before {
 	        transform: translate(-50%, -50%);
 	border-radius: 50%;
 }
+
+	    ul.timeline-list li::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .timeline_content span {
 	font-size: 18px;
 	font-weight: 500;
